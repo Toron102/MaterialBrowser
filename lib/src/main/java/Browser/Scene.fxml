@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import io.github.palexdev.materialfx.controls.MFXButton?>
+<?import io.github.palexdev.materialfx.controls.MFXTextField?>
+<?import javafx.geometry.Point3D?>
+<?import javafx.geometry.Rectangle2D?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.web.WebView?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Browser.Controller">
+   <children>
+      <WebView fx:id="webView" layoutY="71.0" prefHeight="329.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+      <MFXButton alignment="CENTER" buttonType="RAISED" contentDisplay="GRAPHIC_ONLY" depthLevel="LEVEL5" ellipsisString="" layoutY="39.0" onAction="#loadPage" prefHeight="31.0" prefWidth="44.0" rippleColor="#646797">
+         <graphic>
+            <ImageView fitHeight="22.0" fitWidth="34.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/search_FILL0_wght400_GRAD0_opsz24.png" />
+               </image>
+            </ImageView>
+         </graphic></MFXButton>
+      <MFXTextField fx:id="textField" layoutY="14.0" minHeight="10.0" onAction="#loadPage" prefColumnCount="1" prefHeight="25.0" prefWidth="600.0" />
+      <MFXButton alignment="CENTER" buttonType="RAISED" contentDisplay="GRAPHIC_ONLY" depthLevel="LEVEL1" ellipsisString="" layoutX="44.0" layoutY="39.0" onAction="#refreshPage" prefHeight="31.0" prefWidth="44.0" rippleColor="#646797">
+         <graphic>
+            <ImageView fitHeight="22.0" fitWidth="34.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/refresh_FILL0_wght400_GRAD0_opsz24.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </MFXButton>
+      <MFXButton alignment="CENTER" buttonType="RAISED" contentDisplay="GRAPHIC_ONLY" depthLevel="LEVEL1" ellipsisString="" layoutX="88.0" layoutY="39.0" onAction="#zoomIn" prefHeight="31.0" prefWidth="44.0" rippleColor="#646797">
+         <graphic>
+            <ImageView fitHeight="22.0" fitWidth="34.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/zoom_in_FILL0_wght400_GRAD0_opsz24.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </MFXButton>
+      <MFXButton alignment="CENTER" buttonType="RAISED" contentDisplay="GRAPHIC_ONLY" depthLevel="LEVEL1" ellipsisString="" layoutX="132.0" layoutY="39.0" onAction="#zoomOut" prefHeight="31.0" prefWidth="44.0" rippleColor="#646797">
+         <graphic>
+            <ImageView fitHeight="22.0" fitWidth="34.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/zoom_out_FILL0_wght400_GRAD0_opsz24.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </MFXButton>
+      <MFXButton alignment="CENTER" buttonType="RAISED" contentDisplay="GRAPHIC_ONLY" depthLevel="LEVEL1" ellipsisString="" layoutX="176.0" layoutY="39.0" onAction="#displayHistory" prefHeight="31.0" prefWidth="44.0" rippleColor="#646797">
+         <graphic>
+            <ImageView fitHeight="22.0" fitWidth="34.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/history_FILL0_wght400_GRAD0_opsz24.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </MFXButton>
+      <MFXButton alignment="CENTER" buttonType="RAISED" contentDisplay="GRAPHIC_ONLY" depthLevel="LEVEL1" ellipsisString="" layoutX="220.0" layoutY="39.0" onAction="#back" prefHeight="31.0" prefWidth="44.0" rippleColor="#646797">
+         <graphic>
+            <ImageView fitHeight="22.0" fitWidth="34.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/arrow_back_FILL0_wght400_GRAD0_opsz24.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </MFXButton>
+      <MFXButton alignment="CENTER" buttonType="RAISED" contentDisplay="GRAPHIC_ONLY" depthLevel="LEVEL1" ellipsisString="" layoutX="264.0" layoutY="39.0" onAction="#forward" prefHeight="31.0" prefWidth="44.0" rippleColor="#646797">
+         <graphic>
+            <ImageView fitHeight="22.0" fitWidth="34.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/arrow_forward_FILL0_wght400_GRAD0_opsz24.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </MFXButton>
+      <MFXButton alignment="CENTER" buttonType="RAISED" contentDisplay="GRAPHIC_ONLY" depthLevel="LEVEL1" ellipsisString="" layoutX="308.0" layoutY="39.0" onAction="#executeJS" prefHeight="31.0" prefWidth="44.0" rippleColor="#646797">
+         <graphic>
+            <ImageView fitHeight="22.0" fitWidth="34.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/javascript_FILL0_wght400_GRAD0_opsz48.png" />
+               </image>
+               <viewport>
+                  <Rectangle2D />
+               </viewport>
+            </ImageView>
+         </graphic>
+      </MFXButton>
+   </children>
+   <rotationAxis>
+      <Point3D />
+   </rotationAxis>
+</AnchorPane>
