@@ -1,6 +1,6 @@
 # MaterialBrowser
 
-Minimalistic web browser made with JavaFX
+Minimalistic web browser made with JavaFX and Gradle
 
 ![image](https://user-images.githubusercontent.com/116441215/223109044-0f8a9b83-2df3-430a-aca2-3a2bb825c1e8.png)
 
